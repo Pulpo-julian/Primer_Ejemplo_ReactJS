@@ -8,7 +8,7 @@ function Helloworld() {
 
 function App() {
   return (
-    <div>este sera mi primer export en react: <Helloworld/> </div>
+    <div>este sera mi primer export en react: <Helloworld/> <Helloworld/> <Helloworld/> </div>
   );
 }
 
