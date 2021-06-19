@@ -1,14 +1,19 @@
 import './App.css';
 
-function Helloworld() {
+function Helloworld(props) {
   return (
-    <div id="hola">Hola todo bien??</div>
+    <div id={props.color}>{props.mytext}</div>
   )
 }
 
 function App() {
   return (
-    <div>este sera mi primer export en react: <Helloworld/> <Helloworld/> <Helloworld/> </div>
+    <div>
+      este sera mi primer export en react: 
+      <Helloworld mytext=" hola a todos" color="red"/> 
+      <Helloworld mytext=" soy julian" color="hola"/> 
+      <Helloworld mytext=" y estoy aprendiendo React"/> 
+    </div>
   );
 }
 
